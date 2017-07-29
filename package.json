@@ -1,0 +1,22 @@
+{
+  "name": "signalk-airmar-plugin",
+  "version": "1.0.0",
+  "description": "Configure an Airmar DST800 depth sensor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "signalk-node-server-plugin"
+  ],
+  "author": {"name": "Scott Bender", "email": "scott@scottbender.net"},
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^2.2.0"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/sbender9/signalk-airmar-plugin"
+  }
+
+}
