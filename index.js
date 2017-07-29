@@ -42,6 +42,7 @@ module.exports = function(app) {
     } else if ( typeof options.instance === 'undefined' || typeof options.offset === 'undefined' ) {
       console.error("instance or offset is not defined")
     } else {
+      var value = options.offset * 1000;
       var n2kString = util.format(calibrate_depth, (new Date()).toISOString(),
                                   options.instance,
                                   padd((options.offset & 0xff).toString(16), 2),
