@@ -45,8 +45,8 @@ module.exports = function(app) {
       var value = options.offset * 1000;
       var n2kString = util.format(calibrate_depth, (new Date()).toISOString(),
                                   options.instance,
-                                  padd((options.offset & 0xff).toString(16), 2),
-                                  padd(((options.offset >> 8) & 0xff).toString(16), 2));
+                                  padd((value & 0xff).toString(16), 2),
+                                  padd(((value >> 8) & 0xff).toString(16), 2));
       debug("sending offset config: " + n2kString)
       app.emit('nmea2000out', n2kString)
     }
