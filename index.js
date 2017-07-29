@@ -1,6 +1,5 @@
 const debug = require('debug')('signalk-airmar-plugin')
 const util = require('util')
-const _ = require('lodash')
 
 const calibrate_depth = '%s,3,126208,1,%s,11,01,0b,f5,01,f8,01,03,%s,%s,ff,ff'
 

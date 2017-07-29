@@ -1,6 +1,6 @@
 {
   "name": "signalk-airmar-plugin",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Configure an Airmar DST800 depth sensor",
   "main": "index.js",
   "scripts": {
