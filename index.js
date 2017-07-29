@@ -47,7 +47,7 @@ module.exports = function(app) {
                                   padd((options.offset & 0xff).toString(16), 2),
                                   padd(((options.offset >> 8) & 0xff).toString(16), 2));
       debug("sending offset config: " + n2kString)
-      //app.emit('nmea2000out', n2kString)
+      app.emit('nmea2000out', n2kString)
     }
   }
 
