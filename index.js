@@ -28,7 +28,7 @@ module.exports = function(app) {
       offset: {
         title: "Offset",
         type: "number",
-        description: "The transducer offset from the water surface or the keel. Should be a positive number for water surface offset or a negative number for keel offset. This does not reflect the current configured value, it only reflects the last value configured by this plugin. "
+        description: "The transducer offset from the water surface or the keel in meters. Should be a positive number for water surface offset or a negative number for keel offset. This does not reflect the current configured value, it only reflects the last value configured by this plugin. "
       }
     }
   }
