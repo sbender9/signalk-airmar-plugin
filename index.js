@@ -20,8 +20,8 @@ module.exports = function(app) {
     ],
     properties: {
       instance: {
-        title: "NMEA 2000 Instance Id",
-        description: "This is the NMEA 2000 instance id for your transducer.",
+        title: "NMEA 2000 Device Address",
+        description: "This is the NMEA 2000 address of your transducer.",
         type: "number"
       },
       offset: {
@@ -39,7 +39,7 @@ module.exports = function(app) {
       didStart = true;
       return;
     } else if ( typeof options.instance === 'undefined' || typeof options.offset === 'undefined' ) {
-      console.error("instance or offset is not defined")
+      console.error("address or offset is not defined")
     } else {
       var value = options.offset * 1000;
       var n2kString = util.format(calibrate_depth, (new Date()).toISOString(),
